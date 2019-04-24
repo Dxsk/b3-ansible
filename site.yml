@@ -1,0 +1,28 @@
+
+- name: install, config and restart nginx
+  hosts: webdev
+  remote_user: ansible
+  become: true
+  roles:
+    - nginx
+
+- name: install, config and restart php
+  hosts: webdev
+  remote_user: ansible
+  become: true
+  roles: 
+    - php
+
+- name: install, config and restart ftp
+  hosts: webdev
+  remote_user: ansible
+  become: true
+  roles: 
+    - ftp
+
+- name: install, config and restart mysql
+  hosts: dbdev
+  remote_user: ansible
+  become: true
+  roles: 
+    - mysql

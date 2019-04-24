@@ -1,0 +1,15 @@
+---
+
+- name: install ftp
+  apt: 
+    name: vsftpd
+    update_cache: yes
+
+- name: create file vsftp
+  file:
+    path: /srv/files/ftp
+    state: directory
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart vsftp

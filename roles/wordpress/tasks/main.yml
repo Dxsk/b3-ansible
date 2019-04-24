@@ -1,0 +1,10 @@
+---
+
+- name: wget worpress
+  command: wget https://wordpress.org/latest.zip
+
+- name: unzip worpress
+  command: unzip latest.zip
+
+- name: move wordpress into var www html
+  command: mv wordpress/* /var/www/html
