@@ -1,8 +1,0 @@
-apt update && apt install openssh-server -y && \
-apt install sudo -y && \
-service ssh start && \
-adduser ansible && \
-adduser ansible sudo && \
-mkdir /home/ansible/.ssh && \
-touch /home/ansible/.ssh/authorized_keys && \
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC6XQpOTd7QihXvioEBoJn8YhuNOlDzxx+QUCmsUL2RuutlcW/VSLrNBrqsdWOeYngqmI1XYStN9f1BAbn5I8XdzyrejrdNBB+fk475AgTvDXo0Im8es/3x1xxLDRmzxIaamD2FgDUGGr9XmYvTUoHpzjYawj2HqQh/NCVfYF+62gMb7L9k+Ouz4+juHYUnIWwGHs6wZ3KfDq88bw9jS4AhyrIMaxq9FzXsRxuw9fnsMLWmpPGvhYeAjQfzw9uoAsnhQtf7FwfucKNcNOuLi3p1Fx6nw80xqxzFovpYxDZWHLRJhbMAR+41XYvoB+nzjTuJskpFHyVgFDgpDr1qCrKaELZK1xvkeA78EAYnQJDpp+etpIPXfhjs+GjLDcFkxVzoGer+S6QzcyKkR7CYdgoL0tXMUswLgSBTiKmklh6wc7QM8MWZgVzLwPuGmn9uGHMcCqOEibX/4TW97Y9AcUthOMHP6Zdu+lXZRF6wWs4Xwer+bWmkGywJezlTWrcGxCBUwXEJzXNDh+5niBDlovzkj0i8wxnoGEmnAKeekly5jcQy7CZtaYRbwsdwJNIy5OnGz91dIbtHF1mtcHD76G4J1VzLuDdzUTfvEpdA8DBRRqSgX959blU3Nq+rdwYdFVbTpLVoO8qqsYQPfWxlIzkAjiFd8dKBnOdCIM/6B5tWgQ== desk@dxsk" > authorized_keys
